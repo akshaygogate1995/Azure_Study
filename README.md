@@ -35,3 +35,5 @@ Best Static IP scenarios -
 5. Rule-based virtual machines such as domain controllers and DNS servers.
    
 6. Best practice is dynamic assignment goes to a different subnet and static assignment goes to a different subnet.
+
+IMP - Private IP address are assigned to Virtual Machines, Internal Load Balancer and Application Gateway and it supports both dynamic and static allocation. By default - Dynamic allocation is used in Azure Internally.
