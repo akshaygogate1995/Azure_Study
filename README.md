@@ -5,6 +5,7 @@
 IP address classes A, B, C, D, and E are part of the classful network architecture of IPv4, which was used to categorize IP addresses in different ranges based on the size of the network they were intended for:
 
 Class A: Designed for very large networks, such as multinational corporations. The first octet starts with a 0, allowing for 128 networks (1.0.0.0 to 127.255.255.255), but only 126 are usable because 0.0.0.0 is reserved and 127.0.0.0 is used for loopback addresses1.
+
 Class B: Intended for medium-sized networks, like universities or large businesses. The first octet starts with 10, ranging from 128.0.0.0 to 191.255.255.255, allowing for 16,384 networks1.
 Class C: Used for small networks, such as small businesses or residential networks. The first octet starts with 110, covering the range 192.0.0.0 to 223.255.255.255, and supports 2,097,152 networks1.
 Class D: Reserved for multicast groups and not used for standard network addresses. The first octet starts with 1110, ranging from 224.0.0.0 to 239.255.255.2551.
