@@ -37,3 +37,10 @@ Best Static IP scenarios -
 6. Best practice is dynamic assignment goes to a different subnet and static assignment goes to a different subnet.
 
 IMP - Private IP address are assigned to Virtual Machines, Internal Load Balancer and Application Gateway and it supports both dynamic and static allocation. By default - Dynamic allocation is used in Azure Internally.
+
+IMP - Public IP address are assigned to Virtual Machines, Internet facing Load Balancers, VPN Gateways and Application Gateways.You can use dynamic assignment of each of those but static assignment are not allowed on VPN Gateways and Application Gateways.
+
+Few Commands -
+
+1. Get-AzNetworkInterface   ---> Will list all network Cards (Get-AzNetworkInterface | select Name)  
+ 
