@@ -21,3 +21,17 @@ The reason why the ranges 172 and 192 are part of the private IP address space a
 The selection of these specific ranges was likely due to their position within the overall IPv4 address space and their suitability for the scale of networks they were intended to serve. The 172 and 192 ranges fit well within the Class B and C structures, providing a good balance between the number of networks and the number of hosts within those networks.
 
 To connect your on-premise network to Azure network you need VPN gateway or express route. Public IP is for connection with Internet.
+
+Best Static IP scenarios -
+
+1. DNS Name resolution - where a change in IP address would require updating host records.
+   
+2. Also good for IP address-based security models, which requires apps or services to have a static IP address.
+   
+3. SSL certificates are always linked to an IP address.
+   
+4. Firewall rules that allow or deny traffic based on IP address ranges.
+   
+5. Rule-based virtual machines such as domain controllers and DNS servers.
+   
+6. Best practice is dynamic assignment goes to a different subnet and static assignment goes to a different subnet.
