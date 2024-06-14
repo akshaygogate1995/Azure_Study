@@ -42,5 +42,18 @@ IMP - Public IP address are assigned to Virtual Machines, Internet facing Load B
 
 Few Commands -
 
-1. Get-AzNetworkInterface   ---> Will list all network Cards (Get-AzNetworkInterface | select Name)  
+1. Get-AzNetworkInterface   ---> Will list all network Cards (Get-AzNetworkInterface | select Name)
+
+IMP - Service Endpoints are used to connect your virtual machines to platform as a service-based services in Azure.
+
+Why use a service Endpoint?
+
+1. Improved security for your azure service resources. Vnet's private address space can be overlapping, and so it cannot be used to uniquely identify traffic originating from your VNET. Service Endpoint provides the ability to secure Azure service resources to your virtual network by extending VNET identity to the service. Once service endpoints are enabled in your vnet, you can secure azure service resources to your vnet by adding a vnet rule to the resources.
+
+2. Optimal routing.
+
+3. Internal traffic routing.
+
+4. Simple to setup.
+
  
